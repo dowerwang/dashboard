@@ -15,10 +15,11 @@
  */
 void CSpeedometer::paint(QPainter* pPainter, QPaintEvent* pEvent)
 {
-	pPainter->fillRect(rect(), QBrush(Qt::black));
-	pPainter->setPen(Qt::white);
-	pPainter->setFont(QFont("Arial", 30));
-	pPainter->drawText(rect(), Qt::AlignCenter, QString("%1").arg((int)speed_));
+    _speedLabel->setText(QString::number(speed_));
+    _needle->setCurrentValue(speed_);
+    foreach (QcItem * item, mItems) {
+            item->draw(pPainter);
+        }
 }
 
 
