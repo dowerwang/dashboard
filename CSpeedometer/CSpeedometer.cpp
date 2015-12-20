@@ -44,6 +44,9 @@ CSpeedometer::~CSpeedometer(void)
 
 }
 
+/**
+ * @brief Instanciates, configures and add items to the list.
+ */
 void CSpeedometer::addItems()
 {
     QColor itemsColor(200,200,200);

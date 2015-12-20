@@ -9,7 +9,9 @@
 
 
 /**
- * Draw Widget
+ * @brief Draw Widget
+ * Refresh the speed label and the needle value.
+ * Go through the items list and draw each of them.
  * @param pPainter OUT
  * @param pEvent IN
  */
