@@ -15,10 +15,32 @@
  */
 void CContactKey::paint(QPainter* pPainter, QPaintEvent* pEvent)
 {
-	pPainter->fillRect(rect(), QBrush(Qt::blue));
+	pPainter->setBrush(QBrush(Qt::black));
+	pPainter->drawEllipse(rect());
+	switch (keyPosition_) {
+	case Position_Off:
+		pPainter->setBrush(QBrush(Qt::gray));
+		pPainter->drawRoundedRect(pPainter->window().width()/2 - LIGTH_WIDTH/2,pPainter->window().height()/4,
+				      LIGTH_WIDTH, LIGTH_WEIGTH,2,LIGTH_WIDTH/2);
+		break;
+	case Position_Contact:
+		pPainter->setBrush(QBrush(Qt::yellow));
+		pPainter->drawRoundedRect(pPainter->window().width()/2 - LIGTH_WIDTH/2,pPainter->window().height()/4,
+				      LIGTH_WIDTH, LIGTH_WEIGTH,2,LIGTH_WIDTH/2);
+		break;
+	case Position_Start:
+		pPainter->setBrush(QBrush(Qt::green));
+		pPainter->drawRoundedRect(pPainter->window().width()/2 - LIGTH_WIDTH/2,pPainter->window().height()/4,
+				      LIGTH_WIDTH, LIGTH_WEIGTH,2,LIGTH_WIDTH/2);
+		break;
+	default:
+		break;
+	}
+
 	pPainter->setPen(Qt::white);
-	pPainter->setFont(QFont("Arial", 30));
-	pPainter->drawText(rect(), Qt::AlignCenter, QString("%1").arg((int)keyPosition_));
+	pPainter->setFont(QFont("Arial", 10));
+
+	pPainter->drawText(rect(), Qt::AlignBottom + Qt::AlignHCenter, QString("Engine\nStart\nStop"));
 
 }
 

@@ -16,7 +16,7 @@
 #include <QMoveEvent>
 #include <QPainter>
 #include <QTimer>
-
+#include "qcgaugewidget.h"
 
 #define CSPEEDOMETER_DEFAULT_WIDTH	(200) /** [pixel] */
 #define CSPEEDOMETER_DEFAULT_HEIGHT	(200) /** [pixel] */
@@ -46,6 +46,12 @@ private:
 	QSize size_;
 
 	void paint(QPainter* pPainter, QPaintEvent* pEvent);
+
+    QList <QcItem*> mItems;
+
+    void addItems();
+    QcLabelItem* _speedLabel;
+    QcNeedleItem* _needle;
 
 }; // CSpeedometer
 

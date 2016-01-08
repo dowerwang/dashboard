@@ -19,7 +19,7 @@
 
 
 #define CGEAR_BOX_DEFAULT_WIDTH		(100) /** [pixel] */
-#define CGEAR_BOX_DEFAULT_HEIGHT	(50) /** [pixel] */
+#define CGEAR_BOX_DEFAULT_HEIGHT	(100) /** [pixel] */
 
 
 /**
