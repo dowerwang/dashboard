@@ -63,6 +63,7 @@ protected:
 	void paintEvent(QPaintEvent* pEvent);
 	void resizeEvent(QResizeEvent* pEvent);
 	void moveEvent(QMoveEvent* pEvent);
+    void mousePressEvent(QMouseEvent* pEvent);
 
 private:
 	EGearPosition position_;
