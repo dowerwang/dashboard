@@ -15,11 +15,15 @@
  */
 void CFuelGauge::paint(QPainter* pPainter, QPaintEvent* pEvent)
 {
-	pPainter->fillRect(rect(), QBrush(Qt::cyan));
-	pPainter->setPen(Qt::white);
-	pPainter->setFont(QFont("Arial", 30));
+	pPainter->fillRect(rect(), QBrush(Qt::black));
+	pPainter->fillRect(rect(), QBrush(Qt::black));
+	pPainter->setPen(Qt::yellow);
+	pPainter->setFont(QFont("courrier", 40));
 	pPainter->drawText(rect(), Qt::AlignCenter, QString("%1").arg((int)fuelLevel_));
 
-}
 
+
+
+
+}
 
