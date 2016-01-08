@@ -1,7 +1,7 @@
 /**
  * @brief Paint functions definition
  * @file CGearBox_paint.cpp
- * @author gregory.medwed@heig-vd.ch
+ * @author antony.caldeira@master.hes-so.ch, vincent.giachino@master.hes-so.ch, gregory.medwed@heig-vd.ch
  * @date December 2015
  */
 
