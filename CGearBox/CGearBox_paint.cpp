@@ -62,8 +62,6 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,6*rect().height()/7-rect().height()/16,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,3*rect().height()/7-rect().height()/16),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,6*rect().height()/7-rect().height()/16,rect().width()/2,rect().height()/8),QBrush(Qt::black));
         break;
 
     case Position_Neutral:
@@ -76,8 +74,7 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,5*rect().height()/7-rect().height()/32,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,2*rect().height()/7-rect().height()/32),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,5*rect().height()/7-rect().height()/32,rect().width()/2,rect().height()/8),QBrush(Qt::black));
+
         break;
 
     case Position_1_Gear:
@@ -90,8 +87,7 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,4*rect().height()/7,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,1*rect().height()/7),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,4*rect().height()/7,rect().width()/2,rect().height()/8),QBrush(Qt::black));
+
         break;
 
     case Position_2_Gear:
@@ -104,8 +100,6 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,3*rect().height()/7,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,0*rect().height()/7),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,3*rect().height()/7,rect().width()/2,rect().height()/8),QBrush(Qt::black));
         break;
 
     case Position_3_Gear:
@@ -118,8 +112,6 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,2*rect().height()/7,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,-1*rect().height()/7),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,2*rect().height()/7,rect().width()/2,rect().height()/8),QBrush(Qt::black));
         break;
 
     case Position_4_Gear:
@@ -132,8 +124,6 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,1*rect().height()/7+rect().height()/32,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,-2*rect().height()/7+rect().height()/32),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,1*rect().height()/7+rect().height()/32,rect().width()/2,rect().height()/8),QBrush(Qt::black));
         break;
 
     case Position_5_Gear:
@@ -146,8 +136,6 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
           pPainter->fillRect(QRectF(0.75*rect().width()/4,0*rect().height()/7+rect().height()/16,rect().width()/2,rect().height()/8.0/10.0*i),QBrush(QColor(color_gray_max-i*color_mult,color_gray_max-i*color_mult,color_gray_max-i*color_mult)));
         }
 
-        //pPainter->fillRect(QRectF(rect().width()/2-0.6*rect().width()/8,rect().height()/2,0.6*rect().width()/4,-3*rect().height()/7+rect().height()/16),QBrush(Qt::red));
-        //pPainter->fillRect(QRectF(0.75*rect().width()/4,0*rect().height()/7+rect().height()/16,rect().width()/2,rect().height()/8),QBrush(Qt::black));
         break;
     default:
         break;
@@ -160,7 +148,7 @@ void CGearBox::paint(QPainter* pPainter, QPaintEvent* pEvent)
     pPainter->drawRect(QRectF(3*rect().width()/4,0,rect().width()/4,rect().height()));
 
     //texte des vitesses
-    pPainter->setFont(QFont("Comic sans ms", 14,QFont::Bold));
+    pPainter->setFont(QFont("Comic sans ms", 11,QFont::Bold));
     pPainter->drawText(QRectF(3*rect().width()/4,6*rect().height()/7,rect().width()/4,rect().height()/7), Qt::AlignCenter, QString("R"));
     pPainter->drawText(QRectF(3*rect().width()/4,5*rect().height()/7,rect().width()/4,rect().height()/7), Qt::AlignCenter, QString("N"));
     pPainter->drawText(QRectF(3*rect().width()/4,4*rect().height()/7,rect().width()/4,rect().height()/7), Qt::AlignCenter, QString("1"));
