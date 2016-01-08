@@ -43,11 +43,11 @@ void CGearBox::moveEvent(QMoveEvent* pEvent)
 
 void CGearBox::mousePressEvent(QMouseEvent* pEvent)
 {
-    qDebug() << "[CGearBox]: click" << (int)pEvent->button();
-    qDebug() << "[CGearBox]: position y " << (int)pEvent->pos().y();
-    if (pEvent->button() == 1){
-        qDebug() << "[CGearBox]: Event access";
+
+    if (pEvent->button() == Qt::LeftButton){
+        qDebug() << "[CGearBox]: Mouse Press Left Button event access";
         if(pEvent->pos().y()<CGEAR_BOX_DEFAULT_HEIGHT/2){
+             qDebug() << "[CGearBox]: Gear Position increase ";
             switch (this->position_) {
             case Position_Reverse:
                 position_set(Position_Neutral);
@@ -80,10 +80,10 @@ void CGearBox::mousePressEvent(QMouseEvent* pEvent)
             default:
                 break;
             }
-            qDebug() << "[CGearBox]: position move to " << this->position_;
         }
 
         if(pEvent->pos().y()>CGEAR_BOX_DEFAULT_HEIGHT/2){
+            qDebug() << "[CGearBox]: Gear Position decrease ";
             switch (this->position_) {
             case Position_Reverse:
                 position_set(Position_Reverse);
@@ -116,7 +116,6 @@ void CGearBox::mousePressEvent(QMouseEvent* pEvent)
             default:
                 break;
             }
-            qDebug() << "[CGearBox]: position move to " << this->position_;
         }
     }
 
