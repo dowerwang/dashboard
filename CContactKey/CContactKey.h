@@ -69,6 +69,9 @@ private:
 
 	void paint(QPainter* pPainter, QPaintEvent* pEvent);
 
+	const int LIGTH_WIDTH = 30;
+	const int LIGTH_WEIGTH = 10;
+
 
 }; // CContactKey
 
